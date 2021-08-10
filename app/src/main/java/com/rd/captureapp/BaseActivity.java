@@ -33,7 +33,7 @@ public class  BaseActivity extends AppCompatActivity {
     }
 
     public Box<PCInforModel> getPcInfoModel(){
-        return ((RDApp)getApplication()).getBoxStore().boxFor(PCInforModel.class);
+        return ((App)getApplication()).getBoxStore().boxFor(PCInforModel.class);
     }
 
     public void clearLocalFile(){

@@ -6,13 +6,13 @@ import com.rd.captureapp.models.MyObjectBox;
 
 import io.objectbox.BoxStore;
 
-public class RDApp extends Application {
+public class App extends Application {
     private BoxStore boxStore;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        boxStore = MyObjectBox.builder().androidContext(RDApp.this).build();
+        boxStore = MyObjectBox.builder().androidContext(App.this).build();
     }
     public BoxStore getBoxStore(){return boxStore;}
 }
